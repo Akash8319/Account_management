@@ -1,0 +1,57 @@
+Project Report: Simple Bank Account Management System
+### Introduction
+The Simple Bank Account Management System is a software program developed using the Python programming language. It utilizes Object-Oriented Programming (OOP) concepts to simulate basic banking operations. The system allows the creation of distinct user accounts and handles financial transactions such as credits (deposits) and debits (withdrawals) while maintaining real-time balance updates.
+
+### Objectives
+To implement a class-based structure to represent a real-world bank account.
+
+To ensure secure data handling where withdrawals cannot exceed the available balance.
+
+To demonstrate the use of Python constructors, methods, and string representation.
+
+### System Requirements
+Language: Python 3.x
+
+IDE/Editor: VS Code, PyCharm, or IDLE
+
+Operating System: Windows
+
+### Code Logic & Structure
+The project is built around a single class named account.
+
+>>> Attributes (Variables)
+self.name: Stores the name of the account holder.
+
+self.balance: Stores the current funds in the account.
+
+self.accountno: Stores the unique account identification number.
+
+self.histry: An initialized list intended to store transaction logs (currently unused in logic).
+
+>>> Methods (Functions)
+__init__ (Constructor): Initializes the account with the user's name, opening balance, and account number.
+
+get_balance: A getter method that returns the current balance.
+
+debit(amount): Handles withdrawals.
+
+       Checks if the amount is negative/zero.
+
+       Checks if the withdrawal amount is greater than the current balance (Insufficient Balance).
+
+If valid, it subtracts the amount and prints the remaining balance.
+
+credit(amount): Handles deposits. Adds the amount to the balance and prints the status.
+
+__str__: Returns a formatted string containing the account holder's details when the object is printed.
+
+### Conclusion & Future Scope
+The project successfully demonstrates a banking class that handles basic validation. However, the self.histry list is currently initialized but not used.
+
+>>>Future Improvements:
+
+Implement History: Append strings to self.histry inside the debit/credit methods to track a full statement.
+
+PIN Security: Add a password check before allowing debits.
+
+Input: Use input() to allow users to type values interactively instead of hard-coded values.
